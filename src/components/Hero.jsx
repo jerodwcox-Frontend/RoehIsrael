@@ -4,7 +4,10 @@ export default function Hero() {
       <div className="hero-media" />
       <div className="container">
         <div className="hero-content">
-          <span className="eyebrow">Denver, Colorado</span>
+          <div className="hero-eyebrow-group">
+            <span className="hebrew-welcome">ברוכים הבאים</span>
+            <span className="eyebrow">Denver, Colorado</span>
+          </div>
           <h1>
             Come as you are, <em>find your place</em> in the family of{' '}
             <span style={{ whiteSpace: 'nowrap' }}>G-d</span>.

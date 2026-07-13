@@ -5,6 +5,28 @@ export const StarOfDavid = (props) => (
   </svg>
 );
 
+export const MenorahIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" {...props}>
+    <path d="M2 16h20" />
+    <path d="M2 16v-3" />
+    <path d="M5.5 16v-5" />
+    <path d="M9 16v-7" />
+    <path d="M12 16v-9" />
+    <path d="M15 16v-7" />
+    <path d="M18.5 16v-5" />
+    <path d="M22 16v-3" />
+    <circle cx="2" cy="12" r="0.9" fill="currentColor" stroke="none" />
+    <circle cx="5.5" cy="10" r="0.9" fill="currentColor" stroke="none" />
+    <circle cx="9" cy="8" r="0.9" fill="currentColor" stroke="none" />
+    <circle cx="12" cy="6" r="0.9" fill="currentColor" stroke="none" />
+    <circle cx="15" cy="8" r="0.9" fill="currentColor" stroke="none" />
+    <circle cx="18.5" cy="10" r="0.9" fill="currentColor" stroke="none" />
+    <circle cx="22" cy="12" r="0.9" fill="currentColor" stroke="none" />
+    <path d="M12 16v3.5" />
+    <path d="M9 21h6l-1-2.5h-4L9 21Z" />
+  </svg>
+);
+
 export const CandleIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" {...props}>
     <path d="M12 2c1.2 1.6 1.8 2.7 1.8 3.6a1.8 1.8 0 1 1-3.6 0c0-.9.6-2 1.8-3.6Z" />

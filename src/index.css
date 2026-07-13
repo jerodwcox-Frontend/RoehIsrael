@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Frank+Ruhl+Libre:wght@500;700&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ---------------------------------------------------------
    Design tokens — single source of truth for the redesign.
@@ -21,6 +21,9 @@
 
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hebrew: 'Frank Ruhl Libre', 'Times New Roman', serif;
+
+  --star-of-david: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 L21 18 L3 18 Z' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3Cpath d='M12 22 L3 6 L21 6 Z' fill='none' stroke='%23000' stroke-width='1.8'/%3E%3C/svg%3E");
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -104,10 +107,22 @@ button {
 
 .eyebrow::before {
   content: '';
-  width: 1.5rem;
-  height: 2px;
-  background: var(--gold-500);
+  width: 0.85rem;
+  height: 0.85rem;
   display: inline-block;
+  background-color: var(--gold-500);
+  -webkit-mask-image: var(--star-of-david);
+  mask-image: var(--star-of-david);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.hebrew {
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  unicode-bidi: isolate;
 }
 
 .section-head {
@@ -273,6 +288,23 @@ button {
   letter-spacing: 0.03em;
 }
 
+.brand-text .hebrew-name {
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  font-size: 0.8rem;
+  color: var(--gold-600);
+  margin-top: 0.1rem;
+}
+
+.footer-brand .hebrew-name {
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  font-size: 0.95rem;
+  color: var(--gold-400);
+  margin-top: 0.2rem;
+  display: block;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -363,7 +395,23 @@ button {
 }
 
 .hero-content .eyebrow::before {
-  background: var(--gold-400);
+  background-color: var(--gold-400);
+}
+
+.hero-eyebrow-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.hero-content .hebrew-welcome {
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gold-400);
+  letter-spacing: 0.02em;
 }
 
 .hero-content h1 {
@@ -498,6 +546,14 @@ button {
   color: var(--gold-400);
 }
 
+.section-head .hebrew-accent {
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  font-size: 0.95rem;
+  color: var(--gold-600);
+  font-weight: 500;
+}
+
 /* ---------------- About ---------------- */
 .about {
   padding-block: var(--section-pad);
@@ -567,6 +623,43 @@ button {
   letter-spacing: 0.06em;
 }
 
+.about-media .chai-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(218, 187, 82, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-hebrew);
+  font-size: 1.4rem;
+  color: var(--gold-400);
+}
+
+.about-caption {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.about-caption .hebrew {
+  font-size: 1.05rem;
+  color: var(--gold-600);
+  font-weight: 700;
+}
+
+.about-caption .translit {
+  font-size: 0.82rem;
+  color: var(--ink-400);
+  font-style: italic;
+}
+
 .about-copy p {
   color: var(--ink-600);
   font-size: 1.02rem;
@@ -617,6 +710,21 @@ button {
   min-height: 320px;
   position: relative;
   overflow: hidden;
+}
+
+.event-feature::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cpolygon points='80,6 146,132 14,132' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3Cpolygon points='80,154 14,28 146,28' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+  z-index: 0;
+}
+
+.event-feature > * {
+  position: relative;
+  z-index: 1;
 }
 
 .event-feature .tag {
@@ -700,12 +808,26 @@ button {
   padding-block: var(--section-pad);
   background: var(--navy-950);
   color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.location::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpolygon points='100,8 182,164 18,164' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3Cpolygon points='100,192 18,36 182,36' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  z-index: 0;
 }
 
 .location .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 4rem);
+  position: relative;
+  z-index: 1;
 }
 
 .location .section-head p {
@@ -810,6 +932,31 @@ button {
 /* ---------------- Give / donate ---------------- */
 .give {
   padding-block: var(--section-pad);
+  position: relative;
+  overflow: hidden;
+}
+
+.give .container {
+  position: relative;
+  z-index: 1;
+}
+
+.give-menorah {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(60vw, 640px);
+  height: auto;
+  color: var(--gold-600);
+  opacity: 0.09;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.give .section-head .hebrew-accent {
+  display: block;
+  margin-top: 0.35rem;
 }
 
 .give-grid {
@@ -853,6 +1000,23 @@ button {
   color: rgba(255, 255, 255, 0.6);
   padding-block: 3.5rem 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cpolygon points='100,8 182,164 18,164' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3Cpolygon points='100,192 18,36 182,36' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  z-index: 0;
+}
+
+.site-footer .container {
+  position: relative;
+  z-index: 1;
 }
 
 .footer-grid {

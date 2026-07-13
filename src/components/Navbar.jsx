@@ -25,6 +25,7 @@ export default function Navbar() {
             </span>
             <span className="brand-text">
               <span className="name">Congregation Roeh Israel</span>
+              <span className="hebrew-name">רועה ישראל</span>
               <span className="tagline">A Messianic Jewish Congregation</span>
             </span>
           </a>

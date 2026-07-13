@@ -13,6 +13,7 @@ export default function Footer() {
               </span>
               <span className="brand-text">
                 <span className="name">Congregation Roeh Israel</span>
+                <span className="hebrew-name">רועה ישראל</span>
               </span>
             </a>
             <p>A Messianic Jewish Congregation in Denver, Colorado — welcoming Jew and Gentile alike since 1980.</p>

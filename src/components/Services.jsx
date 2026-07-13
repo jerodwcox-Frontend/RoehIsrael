@@ -10,6 +10,7 @@ export default function Services() {
         <div className="section-head centered">
           <span className="eyebrow">Join us</span>
           <h2>Worship With Us This Week</h2>
+          <span className="hebrew-accent">שבת שלום</span>
           <p>
             Every gathering is an open door — whether it's your first Shabbat or your
             three-hundredth, there's a seat for you.

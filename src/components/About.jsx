@@ -6,6 +6,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="container">
         <div className="about-media">
+          <span className="chai-badge" title="Chai — Life">חי</span>
           <StarOfDavid className="mark" strokeWidth="0.8" />
           <div className="stat-badge">
             <span className="num">45+</span>
@@ -38,6 +39,11 @@ export default function About() {
                 <div className="cap">{s.cap}</div>
               </div>
             ))}
+          </div>
+
+          <div className="about-caption">
+            <span className="hebrew">עם ישראל חי</span>
+            <span className="translit">Am Yisrael Chai — the people of Israel live</span>
           </div>
         </div>
       </div>

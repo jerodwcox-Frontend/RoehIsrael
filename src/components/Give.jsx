@@ -1,15 +1,17 @@
 import { contact } from '../data';
-import { HeartIcon } from './icons';
+import { HeartIcon, MenorahIcon } from './icons';
 
 export default function Give() {
   return (
     <section className="give" id="give">
+      <MenorahIcon className="give-menorah" strokeWidth="0.7" />
       <div className="container">
         <div className="section-head centered">
           <span className="eyebrow">
             <HeartIcon width="14" height="14" style={{ marginRight: '0.25rem' }} />
           </span>
           <h2>Support the Congregation</h2>
+          <span className="hebrew-accent">צדקה — Tzedakah</span>
           <p>
             Your generosity keeps our doors open and our ministries running. Give in
             the way that's easiest for you.
