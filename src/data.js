@@ -3,6 +3,7 @@ export const nav = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Events', href: '#events' },
+  { label: 'VBS 2026', href: 'https://roehisrael.org/vbs/', external: true },
   { label: 'Find Us', href: '#find-us' },
 ];
 

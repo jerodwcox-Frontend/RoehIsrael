@@ -2,6 +2,9 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-media" />
+      <span className="hero-credit">
+        Temple menorah replica, Jerusalem — public domain
+      </span>
       <div className="container">
         <div className="hero-content">
           <div className="hero-eyebrow-group">

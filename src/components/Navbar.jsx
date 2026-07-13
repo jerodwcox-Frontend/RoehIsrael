@@ -9,9 +9,9 @@ export default function Navbar() {
     <>
       <div className="announce-bar">
         <div className="container">
-          <span>
-            <strong>VBS 2026</strong> registration is open
-          </span>
+          <a href="https://roehisrael.org/vbs/" target="_blank" rel="noopener noreferrer">
+            <strong>VBS 2026</strong> registration is open — July 6–9
+          </a>
           <span className="sep">•</span>
           <span>Give via Zelle: roehisraeldenver@gmail.com</span>
         </div>
@@ -32,7 +32,12 @@ export default function Navbar() {
 
           <nav className="nav-links">
             {nav.map((item) => (
-              <a key={item.href} href={item.href}>
+              <a
+                key={item.href}
+                href={item.href}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noopener noreferrer' : undefined}
+              >
                 {item.label}
               </a>
             ))}
@@ -59,7 +64,13 @@ export default function Navbar() {
 
         <nav className={`mobile-links ${open ? 'open' : ''}`}>
           {nav.map((item) => (
-            <a key={item.href} href={item.href} onClick={() => setOpen(false)}>
+            <a
+              key={item.href}
+              href={item.href}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
+              onClick={() => setOpen(false)}
+            >
               {item.label}
             </a>
           ))}

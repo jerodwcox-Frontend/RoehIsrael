@@ -1,5 +1,4 @@
 import { aboutStats } from '../data';
-import { StarOfDavid } from './icons';
 
 export default function About() {
   return (
@@ -7,11 +6,17 @@ export default function About() {
       <div className="container">
         <div className="about-media">
           <span className="chai-badge" title="Chai — Life">חי</span>
-          <StarOfDavid className="mark" strokeWidth="0.8" />
           <div className="stat-badge">
             <span className="num">45+</span>
             <span className="cap">Years in Denver</span>
           </div>
+          <span className="credit">
+            Photo:{' '}
+            <a href="https://www.flickr.com/photos/24298372@N04/3370866111" target="_blank" rel="noopener noreferrer">
+              Lawrie Cate
+            </a>
+            , CC BY 2.0
+          </span>
         </div>
 
         <div className="about-copy">

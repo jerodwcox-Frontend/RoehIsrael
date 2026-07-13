@@ -225,6 +225,10 @@ button {
   color: var(--gold-400);
 }
 
+.announce-bar a:hover {
+  text-decoration: underline;
+}
+
 .announce-bar .sep {
   opacity: 0.4;
 }
@@ -363,9 +367,10 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(16, 21, 33, 0.35) 0%, rgba(16, 27, 45, 0.86) 60%, var(--cream-50) 100%),
-    radial-gradient(60% 80% at 85% 10%, rgba(201, 162, 39, 0.35), transparent 60%),
-    radial-gradient(50% 60% at 10% 90%, rgba(39, 58, 92, 0.6), transparent 60%),
+    linear-gradient(180deg, rgba(16, 21, 33, 0.55) 0%, rgba(16, 27, 45, 0.9) 60%, var(--cream-50) 100%),
+    radial-gradient(60% 80% at 85% 10%, rgba(201, 162, 39, 0.25), transparent 60%),
+    radial-gradient(50% 60% at 10% 90%, rgba(39, 58, 92, 0.5), transparent 60%),
+    url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Menorah_0307.jpg') center 20%/cover no-repeat,
     linear-gradient(135deg, var(--navy-950), var(--navy-800) 55%, var(--navy-700));
 }
 
@@ -373,9 +378,23 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  opacity: 0.12;
+  opacity: 0.1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cpolygon points='110,10 200,180 20,180' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3Cpolygon points='110,210 20,40 200,40' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3C/svg%3E");
   background-size: 220px 220px;
+}
+
+.hero-credit {
+  position: absolute;
+  right: clamp(1.25rem, 4vw, 2.5rem);
+  bottom: 1rem;
+  z-index: 1;
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-credit a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
 }
 
 .hero .container {
@@ -574,10 +593,10 @@ button {
   aspect-ratio: 4 / 5;
   box-shadow: var(--shadow-lg);
   background:
-    radial-gradient(70% 60% at 20% 15%, rgba(201, 162, 39, 0.5), transparent 60%),
-    linear-gradient(150deg, var(--navy-950), var(--navy-800) 60%, var(--navy-700));
+    linear-gradient(180deg, rgba(16, 27, 45, 0.15) 0%, rgba(16, 27, 45, 0.75) 100%),
+    url('https://upload.wikimedia.org/wikipedia/commons/2/26/Open_Torah_scroll.jpg') center/cover no-repeat;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -585,16 +604,23 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  opacity: 0.14;
+  opacity: 0.08;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cpolygon points='90,8 164,148 16,148' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3Cpolygon points='90,172 16,32 164,32' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3C/svg%3E");
   background-size: 180px 180px;
+  pointer-events: none;
 }
 
-.about-media .mark {
+.about-media .credit {
   position: relative;
-  width: 120px;
-  height: 120px;
-  color: rgba(218, 187, 82, 0.85);
+  z-index: 1;
+  align-self: flex-end;
+  margin: 0 1.25rem 1.25rem auto;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.about-media .credit a {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .about-media .stat-badge {

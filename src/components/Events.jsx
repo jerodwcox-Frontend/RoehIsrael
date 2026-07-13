@@ -11,14 +11,20 @@ export default function Events() {
 
         <div className="event-grid">
           <div className="event-feature">
-            <span className="tag">Registration open</span>
+            <span className="tag">July 6–9 · 9 AM–12 PM</span>
             <h3>Vacation Bible School 2026</h3>
             <p>
               A week of Scripture, songs, and community for our youngest members.
-              Save your child's spot before class sizes fill up.
+              Registration forms and full details are on our VBS page.
             </p>
-            <a className="btn btn-primary btn-sm" href="#find-us" style={{ alignSelf: 'flex-start' }}>
-              Learn More
+            <a
+              className="btn btn-primary btn-sm"
+              href="https://roehisrael.org/vbs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ alignSelf: 'flex-start' }}
+            >
+              Register for VBS
             </a>
           </div>
 
