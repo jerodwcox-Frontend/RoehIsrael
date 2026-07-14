@@ -1129,33 +1129,6 @@ button {
   margin-top: 0.25rem;
 }
 
-.bulletin-frame {
-  margin-top: 1.25rem;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid rgba(16, 27, 45, 0.1);
-  box-shadow: var(--shadow-sm);
-  aspect-ratio: 8.5 / 11;
-  max-height: 780px;
-  background: var(--white);
-  /* Blocks pointer interaction so the embed reads as a locked preview,
-     not an editable/scrollable document surface. */
-  position: relative;
-}
-
-.bulletin-frame::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-}
-
-.bulletin-frame iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 /* ---------------- Give / donate ---------------- */
 .give {
   padding-block: var(--section-pad);
