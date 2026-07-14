@@ -50,6 +50,7 @@ body {
   background: var(--cream-50);
   color: var(--ink-900);
   font-family: var(--font-body);
+  font-size: 21px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.55;
 }
@@ -140,13 +141,13 @@ button {
 }
 
 .section-head h2 {
-  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  font-size: 30px;
   font-weight: 600;
 }
 
 .section-head p {
   color: var(--ink-600);
-  font-size: 1.05rem;
+  font-size: 21px;
 }
 
 .btn {
@@ -445,7 +446,7 @@ button {
 }
 
 .hero-content .lede {
-  font-size: 1.15rem;
+  font-size: 21px;
   color: rgba(255, 255, 255, 0.85);
   max-width: 560px;
 }
@@ -532,18 +533,19 @@ button {
 }
 
 .service-card h3 {
-  font-size: 1.25rem;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .service-card .when {
   font-weight: 700;
   color: var(--navy-800);
+  font-size: 21px;
 }
 
 .service-card p.desc {
   color: var(--ink-600);
-  font-size: 0.95rem;
+  font-size: 21px;
 }
 
 .service-card.accent {
@@ -688,7 +690,7 @@ button {
 
 .about-copy p {
   color: var(--ink-600);
-  font-size: 1.02rem;
+  font-size: 21px;
   margin-bottom: 1.1rem;
 }
 
@@ -895,7 +897,7 @@ button {
 
 .info-item p, .info-item a {
   color: rgba(255, 255, 255, 0.65);
-  font-size: 0.92rem;
+  font-size: 21px;
 }
 
 .info-item a:hover {
@@ -1002,12 +1004,12 @@ button {
 }
 
 .give-card h3 {
-  font-size: 1.15rem;
+  font-size: 24px;
 }
 
 .give-card p {
   color: var(--ink-600);
-  font-size: 0.92rem;
+  font-size: 21px;
 }
 
 .give-card .code {
@@ -1058,8 +1060,9 @@ button {
 
 .footer-brand p {
   margin-top: 1rem;
-  font-size: 0.9rem;
-  max-width: 300px;
+  font-size: 21px;
+  line-height: 1.5;
+  max-width: 440px;
 }
 
 .footer-social {
