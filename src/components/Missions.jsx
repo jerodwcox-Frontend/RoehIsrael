@@ -1,5 +1,5 @@
-import { missions } from '../data';
-import { PinIcon, StarOfDavid, HeartIcon, TorahIcon } from './icons';
+import { missions, prayerBulletinUrl } from '../data';
+import { PinIcon, StarOfDavid, HeartIcon, TorahIcon, BulletinIcon } from './icons';
 
 const icons = [PinIcon, StarOfDavid, HeartIcon, TorahIcon];
 
@@ -32,6 +32,24 @@ export default function Missions({ showHeading = true }) {
               </div>
             );
           })}
+        </div>
+
+        <div className="prayer-bulletin">
+          <span className="icon">
+            <BulletinIcon width="26" height="26" />
+          </span>
+          <div className="prayer-bulletin-text">
+            <h3>This Week's Prayer Bulletin</h3>
+            <p>Updated weekly — prayer requests, praise reports, and who to lift up in the coming days.</p>
+          </div>
+          <a
+            className="btn btn-primary btn-sm"
+            href={prayerBulletinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open Bulletin
+          </a>
         </div>
       </div>
     </section>

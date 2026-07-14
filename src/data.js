@@ -8,6 +8,9 @@ export const nav = [
   { label: 'Find Us', href: '/find-us' },
 ];
 
+export const prayerBulletinUrl =
+  'https://docs.google.com/document/d/1HqwAg8Sk2kJqCDX9Fk7_IFeMOf5t5bbG/edit?usp=sharing&ouid=100534678698735327403&rtpof=true&sd=true';
+
 export const missions = [
   {
     title: 'Local Outreach in Denver',

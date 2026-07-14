@@ -1089,6 +1089,46 @@ button {
   font-size: 21px;
 }
 
+.prayer-bulletin {
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, var(--navy-900), var(--navy-700));
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.prayer-bulletin .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.prayer-bulletin-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.prayer-bulletin-text h3 {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.prayer-bulletin-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 21px;
+  margin-top: 0.25rem;
+}
+
 /* ---------------- Give / donate ---------------- */
 .give {
   padding-block: var(--section-pad);
