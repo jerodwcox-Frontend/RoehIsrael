@@ -1,10 +1,30 @@
 export const nav = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Events', href: '#events' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services' },
+  { label: 'Events', href: '/events' },
+  { label: 'Missions', href: '/missions' },
   { label: 'VBS 2026', href: 'https://roehisrael.org/vbs/', external: true },
-  { label: 'Find Us', href: '#find-us' },
+  { label: 'Find Us', href: '/find-us' },
+];
+
+export const missions = [
+  {
+    title: 'Local Outreach in Denver',
+    desc: 'Food and clothing drives, hospital and shut-in visitation, and practical help for families in our own community — loving our neighbors is where mission starts.',
+  },
+  {
+    title: 'Messianic Jewish Ministry',
+    desc: "Roeh Israel was born out of Chosen People Ministries, and we remain committed to sharing Yeshua with the Jewish people in a way that honors Jewish identity, tradition, and Torah.",
+  },
+  {
+    title: 'Standing With Israel',
+    desc: 'Regular prayer gatherings for the peace of Jerusalem and the Land, and support for ministry partners serving Jewish and Arab communities in Israel.',
+  },
+  {
+    title: 'Discipleship & Teaching',
+    desc: 'Torah study, Messianic discipleship classes, and mentoring so believers — Jew and Gentile alike — grow rooted in Scripture and equipped to serve.',
+  },
 ];
 
 export const serviceTimes = [

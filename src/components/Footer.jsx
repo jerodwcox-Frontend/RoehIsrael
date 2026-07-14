@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { nav, contact } from '../data';
 import { StarOfDavid, FacebookIcon, YoutubeIcon, XIcon } from './icons';
 
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <a className="brand" href="#home">
+            <Link className="brand" to="/">
               <span className="brand-mark">
                 <StarOfDavid stroke="#dabb52" />
               </span>
@@ -15,7 +16,7 @@ export default function Footer() {
                 <span className="name">Congregation Roeh Israel</span>
                 <span className="hebrew-name">רועה ישראל</span>
               </span>
-            </a>
+            </Link>
             <p>A Messianic Jewish Congregation in Denver, Colorado — welcoming Jew and Gentile alike since 1980.</p>
             <div className="footer-social">
               <a href="#" aria-label="Facebook">
@@ -35,13 +36,13 @@ export default function Footer() {
             <ul>
               {nav.map((item) => (
                 <li key={item.href}>
-                  <a
-                    href={item.href}
-                    target={item.external ? '_blank' : undefined}
-                    rel={item.external ? 'noopener noreferrer' : undefined}
-                  >
-                    {item.label}
-                  </a>
+                  {item.external ? (
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link to={item.href}>{item.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>

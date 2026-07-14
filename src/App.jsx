@@ -1,26 +1,28 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import Events from './components/Events';
-import Location from './components/Location';
-import Give from './components/Give';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
+import EventsPage from './pages/EventsPage';
+import MissionsPage from './pages/MissionsPage';
+import FindUsPage from './pages/FindUsPage';
+import GivePage from './pages/GivePage';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <About />
-        <Events />
-        <Location />
-        <Give />
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="events" element={<EventsPage />} />
+          <Route path="missions" element={<MissionsPage />} />
+          <Route path="find-us" element={<FindUsPage />} />
+          <Route path="give" element={<GivePage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

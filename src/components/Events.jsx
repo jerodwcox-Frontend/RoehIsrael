@@ -1,13 +1,15 @@
 import { events } from '../data';
 
-export default function Events() {
+export default function Events({ showHeading = true }) {
   return (
     <section className="events" id="events">
       <div className="container">
-        <div className="section-head">
-          <span className="eyebrow">What's coming up</span>
-          <h2>Events &amp; Gatherings</h2>
-        </div>
+        {showHeading && (
+          <div className="section-head">
+            <span className="eyebrow">What's coming up</span>
+            <h2>Events &amp; Gatherings</h2>
+          </div>
+        )}
 
         <div className="event-grid">
           <div className="event-feature">

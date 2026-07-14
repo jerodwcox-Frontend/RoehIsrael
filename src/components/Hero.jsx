@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="hero" id="home">
@@ -21,12 +23,12 @@ export default function Hero() {
             community since 1980.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#find-us">
+            <Link className="btn btn-primary" to="/find-us">
               Plan Your Visit
-            </a>
-            <a className="btn btn-ghost" href="#services">
+            </Link>
+            <Link className="btn btn-ghost" to="/services">
               Service Times
-            </a>
+            </Link>
           </div>
 
           <div className="hero-times">

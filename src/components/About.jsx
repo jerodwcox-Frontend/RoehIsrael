@@ -1,6 +1,6 @@
 import { aboutStats } from '../data';
 
-export default function About() {
+export default function About({ showHeading = true }) {
   return (
     <section className="about" id="about">
       <div className="container">
@@ -20,10 +20,12 @@ export default function About() {
         </div>
 
         <div className="about-copy">
-          <div className="section-head">
-            <span className="eyebrow">Our story</span>
-            <h2>From a Living Room to a Congregation of 300</h2>
-          </div>
+          {showHeading && (
+            <div className="section-head">
+              <span className="eyebrow">Our story</span>
+              <h2>From a Living Room to a Congregation of 300</h2>
+            </div>
+          )}
           <p>
             Eliezer Urbach started Roeh Israel while working for Chosen People
             Ministries. What began as a small home fellowship quickly outgrew his

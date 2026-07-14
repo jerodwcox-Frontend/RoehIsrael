@@ -1,16 +1,18 @@
 import { officeHours, contact } from '../data';
 import { PinIcon, MailIcon, PhoneIcon, ClockIcon } from './icons';
 
-export default function Location() {
+export default function Location({ showHeading = true }) {
   return (
     <section className="location" id="find-us">
       <div className="container">
         <div>
-          <div className="section-head">
-            <span className="eyebrow">Find us</span>
-            <h2>Visit Us in Denver</h2>
-            <p>We'd love to welcome you in person. Here's everything you need to plan your visit.</p>
-          </div>
+          {showHeading && (
+            <div className="section-head">
+              <span className="eyebrow">Find us</span>
+              <h2>Visit Us in Denver</h2>
+              <p>We'd love to welcome you in person. Here's everything you need to plan your visit.</p>
+            </div>
+          )}
 
           <div className="info-list">
             <div className="info-item">

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import { StarOfDavid } from './icons';
 import { nav } from '../data';
 
@@ -19,7 +20,7 @@ export default function Navbar() {
 
       <header className="navbar">
         <div className="container">
-          <a className="brand" href="#home">
+          <Link className="brand" to="/">
             <span className="brand-mark">
               <StarOfDavid stroke="#dabb52" />
             </span>
@@ -28,28 +29,34 @@ export default function Navbar() {
               <span className="hebrew-name">רועה ישראל</span>
               <span className="tagline">A Messianic Jewish Congregation</span>
             </span>
-          </a>
+          </Link>
 
           <nav className="nav-links">
-            {nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                target={item.external ? '_blank' : undefined}
-                rel={item.external ? 'noopener noreferrer' : undefined}
-              >
-                {item.label}
-              </a>
-            ))}
+            {nav.map((item) =>
+              item.external ? (
+                <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer">
+                  {item.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={item.href}
+                  to={item.href}
+                  end={item.href === '/'}
+                  className={({ isActive }) => (isActive ? 'active' : undefined)}
+                >
+                  {item.label}
+                </NavLink>
+              )
+            )}
           </nav>
 
           <div className="nav-cta">
-            <a className="btn btn-outline btn-sm" href="#find-us">
+            <Link className="btn btn-outline btn-sm" to="/find-us">
               Contact
-            </a>
-            <a className="btn btn-primary btn-sm" href="#give">
+            </Link>
+            <Link className="btn btn-primary btn-sm" to="/give">
               Give
-            </a>
+            </Link>
             <button
               className="nav-toggle"
               aria-label="Toggle menu"
@@ -63,20 +70,26 @@ export default function Navbar() {
         </div>
 
         <nav className={`mobile-links ${open ? 'open' : ''}`}>
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              target={item.external ? '_blank' : undefined}
-              rel={item.external ? 'noopener noreferrer' : undefined}
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
-          <a href="#give" onClick={() => setOpen(false)}>
+          {nav.map((item) =>
+            item.external ? (
+              <a
+                key={item.href}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+              >
+                {item.label}
+              </a>
+            ) : (
+              <NavLink key={item.href} to={item.href} end={item.href === '/'} onClick={() => setOpen(false)}>
+                {item.label}
+              </NavLink>
+            )
+          )}
+          <Link to="/give" onClick={() => setOpen(false)}>
             Give
-          </a>
+          </Link>
         </nav>
       </header>
     </>
