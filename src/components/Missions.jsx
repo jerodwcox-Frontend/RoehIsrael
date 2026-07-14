@@ -39,7 +39,7 @@ export default function Missions({ showHeading = true }) {
             <BulletinIcon width="26" height="26" />
           </span>
           <div className="prayer-bulletin-text">
-            <h3>This Week's Prayer Bulletin</h3>
+            <h3>This Week's Prayer/Mission Bulletin</h3>
             <p>Updated weekly — prayer requests, praise reports, and who to lift up in the coming days.</p>
           </div>
           <a
