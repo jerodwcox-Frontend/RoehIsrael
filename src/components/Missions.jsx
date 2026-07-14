@@ -48,8 +48,16 @@ export default function Missions({ showHeading = true }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open Bulletin
+            Open Full Screen
           </a>
+        </div>
+
+        <div className="bulletin-frame">
+          <iframe
+            title="This Week's Prayer/Mission Bulletin"
+            src={prayerBulletinUrl}
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
