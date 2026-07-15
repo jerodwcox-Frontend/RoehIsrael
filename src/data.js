@@ -4,8 +4,50 @@ export const nav = [
   { label: 'Services', href: '/services' },
   { label: 'Events', href: '/events' },
   { label: 'Missions', href: '/missions' },
+  { label: 'Sermons', href: '/sermons' },
   { label: 'VBS 2026', href: 'https://roehisrael.org/vbs/', external: true },
   { label: 'Find Us', href: '/find-us' },
+];
+
+export const social = {
+  youtube: 'https://www.youtube.com/@RoehIsrael/streams',
+  twitter: 'https://twitter.com/RoehIsrael',
+  facebook: 'https://www.facebook.com/CongregationRoehIsrael',
+  rumble: 'https://rumble.com/c/c-3717131',
+};
+
+export const paypalDonateUrl =
+  'https://www.paypal.com/donate?token=VgEIzQAnMeqzLGoMyEz_qhsU1wo5xcQYF6vqPcXoZX1EcHe8Q1EmqEokAIdLhCU27Zq7XKjrndak7Nd1';
+
+export const sermonSources = [
+  {
+    key: 'youtube',
+    name: 'YouTube',
+    desc: 'Full-length sermons, teachings, and livestreams — our main video archive.',
+    href: social.youtube,
+    cta: 'Watch on YouTube',
+  },
+  {
+    key: 'rumble',
+    name: 'Rumble',
+    desc: 'The same sermons and streams, mirrored on Rumble.',
+    href: social.rumble,
+    cta: 'Watch on Rumble',
+  },
+  {
+    key: 'facebook',
+    name: 'Facebook',
+    desc: 'Live during services, plus clips, announcements, and photos from the congregation.',
+    href: social.facebook,
+    cta: 'Follow on Facebook',
+  },
+  {
+    key: 'twitter',
+    name: 'X (Twitter)',
+    desc: 'Quick updates, verse of the day, and links to new teaching as it goes up.',
+    href: social.twitter,
+    cta: 'Follow on X',
+  },
 ];
 
 export const prayerBulletinUrl =

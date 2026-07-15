@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { nav, contact } from '../data';
-import { StarOfDavid, FacebookIcon, YoutubeIcon, XIcon } from './icons';
+import { nav, contact, social } from '../data';
+import { StarOfDavid, FacebookIcon, YoutubeIcon, XIcon, PlayIcon } from './icons';
 
 export default function Footer() {
   return (
@@ -19,14 +19,17 @@ export default function Footer() {
             </Link>
             <p>A Messianic Jewish Congregation in Denver, Colorado — welcoming Jew and Gentile alike since 1980.</p>
             <div className="footer-social">
-              <a href="#" aria-label="Facebook">
-                <FacebookIcon width="16" height="16" />
-              </a>
-              <a href="#" aria-label="YouTube">
+              <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <YoutubeIcon width="16" height="16" />
               </a>
-              <a href="#" aria-label="X">
+              <a href={social.twitter} target="_blank" rel="noopener noreferrer" aria-label="X">
                 <XIcon width="16" height="16" />
+              </a>
+              <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <FacebookIcon width="16" height="16" />
+              </a>
+              <a href={social.rumble} target="_blank" rel="noopener noreferrer" aria-label="Rumble">
+                <PlayIcon width="16" height="16" />
               </a>
             </div>
           </div>

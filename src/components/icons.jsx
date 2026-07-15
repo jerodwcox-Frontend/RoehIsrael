@@ -5,6 +5,13 @@ export const StarOfDavid = (props) => (
   </svg>
 );
 
+export const PlayIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <circle cx="12" cy="12" r="9.2" />
+    <path d="M10 8.3v7.4l6-3.7Z" fill="currentColor" stroke="none" />
+  </svg>
+);
+
 export const BulletinIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" {...props}>
     <path d="M6 2.5h9l3 3v16H6Z" />

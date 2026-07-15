@@ -1,4 +1,4 @@
-import { contact } from '../data';
+import { contact, paypalDonateUrl } from '../data';
 import { HeartIcon, MenorahIcon } from './icons';
 
 export default function Give({ showHeading = true }) {
@@ -30,8 +30,14 @@ export default function Give({ showHeading = true }) {
           <div className="give-card">
             <h3>Give via Card or PayPal</h3>
             <p>Use a debit card, credit card, or your PayPal balance for a one-time or recurring gift.</p>
-            <a className="btn btn-primary" href="#give" style={{ alignSelf: 'flex-start' }}>
-              Donate Online
+            <a
+              className="btn btn-primary"
+              href={paypalDonateUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ alignSelf: 'flex-start' }}
+            >
+              Donate via PayPal
             </a>
           </div>
         </div>
