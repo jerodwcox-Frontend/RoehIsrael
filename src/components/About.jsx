@@ -34,8 +34,8 @@ export default function About({ showHeading = true }) {
           </p>
           <p>
             Burt Yellin was called to be Pastor/Rabbi in 1985 and still serves the
-            Lord here today. Bill Berg joined as Associate Pastor in 1991, faithfully
-            serving until he went home to the Lord in December 2018. What began as a
+            L-rd here today. Bill Berg joined as Associate Pastor in 1991, faithfully
+            serving until he went home to the L-rd in December 2018. What began as a
             handful of believers has grown to some 300 people.
           </p>
 
