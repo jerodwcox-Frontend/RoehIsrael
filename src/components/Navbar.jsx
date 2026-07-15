@@ -10,10 +10,6 @@ export default function Navbar() {
     <>
       <div className="announce-bar">
         <div className="container">
-          <a href="https://roehisrael.org/vbs/" target="_blank" rel="noopener noreferrer">
-            <strong>VBS 2026</strong> registration is open — July 6–9
-          </a>
-          <span className="sep">•</span>
           <span>Give via Zelle: roehisraeldenver@gmail.com</span>
         </div>
       </div>

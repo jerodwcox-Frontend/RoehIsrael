@@ -8,7 +8,7 @@ export default function EventsPage() {
         hebrew="מועדים"
         eyebrow="What's coming up"
         title="Events & Gatherings"
-        lede="From VBS to Torah study to potlucks — here's what's on the calendar at Roeh Israel."
+        lede="From Torah study to potlucks — here's what's on the calendar at Roeh Israel."
       />
       <Events showHeading={false} />
     </>

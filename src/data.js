@@ -5,7 +5,6 @@ export const nav = [
   { label: 'Events', href: '/events' },
   { label: 'Missions', href: '/missions' },
   { label: 'Sermons', href: '/sermons' },
-  { label: 'VBS 2026', href: 'https://roehisrael.org/vbs/', external: true },
   { label: 'Find Us', href: '/find-us' },
 ];
 
@@ -84,12 +83,6 @@ export const serviceTimes = [
     when: 'Saturdays · 9:45 AM MST',
     desc: 'Our main gathering — Torah reading, teaching from a Messianic Jewish perspective, and congregational worship.',
     accent: true,
-  },
-  {
-    title: 'VBS 2026',
-    when: 'Registration open now',
-    desc: 'Vacation Bible School returns in 2026 — a week of Scripture, songs, and community for our youngest members.',
-    accent: false,
   },
 ];
 

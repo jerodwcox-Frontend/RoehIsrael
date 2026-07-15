@@ -1,7 +1,7 @@
 import { serviceTimes } from '../data';
-import { CandleIcon, TorahIcon, KidsIcon } from './icons';
+import { CandleIcon, TorahIcon } from './icons';
 
-const icons = [CandleIcon, TorahIcon, KidsIcon];
+const icons = [CandleIcon, TorahIcon];
 
 export default function Services({ showHeading = true }) {
   return (

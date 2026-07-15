@@ -582,8 +582,10 @@ button {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  max-width: 760px;
+  margin-inline: auto;
 }
 
 .service-card {
@@ -804,64 +806,13 @@ button {
 
 .event-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 1.5rem;
-}
-
-.event-feature {
-  background: linear-gradient(135deg, var(--navy-900), var(--navy-700));
-  border-radius: var(--radius-lg);
-  padding: clamp(1.75rem, 3vw, 2.6rem);
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 1rem;
-  min-height: 320px;
-  position: relative;
-  overflow: hidden;
-}
-
-.event-feature::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  opacity: 0.1;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cpolygon points='80,6 146,132 14,132' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3Cpolygon points='80,154 14,28 146,28' fill='none' stroke='%23dabb52' stroke-width='1.5'/%3E%3C/svg%3E");
-  background-size: 160px 160px;
-  z-index: 0;
-}
-
-.event-feature > * {
-  position: relative;
-  z-index: 1;
-}
-
-.event-feature .tag {
-  align-self: flex-start;
-  background: var(--gold-500);
-  color: var(--navy-950);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-}
-
-.event-feature h3 {
-  color: var(--white);
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
-}
-
-.event-feature p {
-  color: rgba(255, 255, 255, 0.75);
-  max-width: 420px;
+  grid-template-columns: 1fr;
 }
 
 .event-list {
   display: flex;
   flex-direction: column;
+  max-width: 640px;
   gap: 1rem;
 }
 
@@ -1300,10 +1251,6 @@ button {
 
   .about-media {
     aspect-ratio: 16 / 10;
-  }
-
-  .event-grid {
-    grid-template-columns: 1fr;
   }
 
   .location .container {
