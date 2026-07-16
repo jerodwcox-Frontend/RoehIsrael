@@ -47,9 +47,6 @@ export default function Navbar() {
           </nav>
 
           <div className="nav-cta">
-            <Link className="btn btn-outline btn-sm" to="/find-us">
-              Contact
-            </Link>
             <Link className="btn btn-primary btn-sm" to="/give">
               Give
             </Link>

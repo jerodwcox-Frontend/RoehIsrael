@@ -313,15 +313,17 @@ button {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.4rem;
+  flex-wrap: nowrap;
 }
 
 .nav-links a {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--ink-600);
   position: relative;
   padding-block: 0.3rem;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -1433,18 +1435,9 @@ button {
   }
 }
 
-@media (max-width: 760px) {
-  .nav-links,
-  .nav-cta .btn-outline {
+@media (max-width: 1024px) {
+  .nav-links {
     display: none;
-  }
-
-  .podcast-latest {
-    grid-template-columns: 1fr;
-  }
-
-  .podcast-external {
-    justify-self: flex-start;
   }
 
   .nav-toggle {
@@ -1467,6 +1460,16 @@ button {
     border-bottom: 1px solid rgba(16, 27, 45, 0.06);
     font-weight: 500;
     color: var(--ink-600);
+  }
+}
+
+@media (max-width: 760px) {
+  .podcast-latest {
+    grid-template-columns: 1fr;
+  }
+
+  .podcast-external {
+    justify-self: flex-start;
   }
 
   .hero {
