@@ -1120,6 +1120,10 @@ button {
   overflow: hidden;
 }
 
+.sermons-latest {
+  margin-bottom: 2rem;
+}
+
 .podcast-latest::before {
   content: '';
   position: absolute;
