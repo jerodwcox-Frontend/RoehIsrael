@@ -47,19 +47,23 @@ export default function Navbar() {
           </nav>
 
           <div className="nav-cta">
+            <Link className="btn btn-outline btn-sm" to="/find-us">
+              Contact Us
+            </Link>
             <Link className="btn btn-primary btn-sm" to="/give">
               Give
             </Link>
-            <button
-              className="nav-toggle"
-              aria-label="Toggle menu"
-              onClick={() => setOpen((v) => !v)}
-            >
-              <span />
-              <span />
-              <span />
-            </button>
           </div>
+
+          <button
+            className="nav-toggle"
+            aria-label="Toggle menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
         </div>
 
         <nav className={`mobile-links ${open ? 'open' : ''}`}>

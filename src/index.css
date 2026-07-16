@@ -349,7 +349,8 @@ button {
 .nav-cta {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 0.75rem;
+  order: 2;
 }
 
 .nav-toggle {
@@ -357,6 +358,7 @@ button {
   background: none;
   border: none;
   padding: 0.4rem;
+  order: 1;
 }
 
 .nav-toggle span {
@@ -1460,6 +1462,24 @@ button {
     border-bottom: 1px solid rgba(16, 27, 45, 0.06);
     font-weight: 500;
     color: var(--ink-600);
+  }
+}
+
+/* Below this, "Contact Us" + "Give" no longer fit beside the brand
+   and hamburger on one line, so the CTAs drop to their own row. */
+@media (max-width: 500px) {
+  .navbar .container {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
+  .nav-cta {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .nav-cta .btn {
+    flex: 1;
   }
 }
 
