@@ -1124,6 +1124,10 @@ button {
   margin-bottom: 2rem;
 }
 
+.latest-sermon-home {
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+}
+
 .podcast-latest::before {
   content: '';
   position: absolute;

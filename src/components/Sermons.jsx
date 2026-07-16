@@ -1,20 +1,10 @@
-import { Link } from 'react-router-dom';
 import { sermonSources } from '../data';
 import { YoutubeIcon, PlayIcon, FacebookIcon, XIcon } from './icons';
-import usePodcastFeed from '../hooks/usePodcastFeed';
+import LatestSermon from './LatestSermon';
 
 const icons = { youtube: YoutubeIcon, rumble: PlayIcon, facebook: FacebookIcon, twitter: XIcon };
 
-function formatDate(pubDate) {
-  const date = new Date(pubDate);
-  if (Number.isNaN(date.getTime())) return '';
-  return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-}
-
 export default function Sermons({ showHeading = true }) {
-  const { episodes, status } = usePodcastFeed(1);
-  const latest = episodes[0];
-
   return (
     <section className="missions" id="sermons">
       <div className="container">
@@ -30,21 +20,7 @@ export default function Sermons({ showHeading = true }) {
           </div>
         )}
 
-        {status === 'ready' && latest && (
-          <div className="podcast-latest sermons-latest">
-            <span className="icon">
-              <PlayIcon width="26" height="26" />
-            </span>
-            <div className="podcast-latest-text">
-              <span className="podcast-tag">Latest Sermon</span>
-              <h3>{latest.title}</h3>
-              <p>{formatDate(latest.pubDate)}</p>
-            </div>
-            <Link className="btn btn-outline btn-sm podcast-external" to="/podcast">
-              Listen Now
-            </Link>
-          </div>
-        )}
+        <LatestSermon />
 
         <div className="missions-grid">
           {sermonSources.map((s) => {
