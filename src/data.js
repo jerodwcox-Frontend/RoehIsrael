@@ -5,8 +5,12 @@ export const nav = [
   { label: 'Events', href: '/events' },
   { label: 'Missions', href: '/missions' },
   { label: 'Sermons', href: '/sermons' },
+  { label: 'Podcast', href: '/podcast' },
   { label: 'Find Us', href: '/find-us' },
 ];
+
+export const podcastFeedUrl = 'https://feed.podbean.com/roehisrael/feed.xml';
+export const podcastChannelUrl = 'https://roehisrael.podbean.com';
 
 export const social = {
   youtube: 'https://www.youtube.com/@RoehIsrael/streams',
