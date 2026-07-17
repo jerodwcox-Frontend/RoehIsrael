@@ -29,6 +29,17 @@ export default function Missions({ showHeading = true }) {
                 </span>
                 <h3>{m.title}</h3>
                 <p>{m.desc}</p>
+                {m.href && (
+                  <a
+                    className="btn btn-outline btn-sm"
+                    href={m.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ alignSelf: 'flex-start' }}
+                  >
+                    {m.cta}
+                  </a>
+                )}
               </div>
             );
           })}

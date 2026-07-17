@@ -64,6 +64,8 @@ export const missions = [
   {
     title: 'Messianic Jewish Ministry',
     desc: "Roeh Israel was born out of Chosen People Ministries, and we remain committed to sharing Y'shua with the Jewish people in a way that honors Jewish identity, tradition, and Torah.",
+    href: 'https://myemail.constantcontact.com/Hebrew-Word-of-the-Week--Adonai-Nissi------------------The-Lord-Is-My-Banner.html?soid=1142307874429&aid=hmkunIupJ28',
+    cta: 'See Ministries We Support',
   },
   {
     title: 'Standing With Israel',
