@@ -56,6 +56,16 @@ export const sermonSources = [
 export const prayerBulletinUrl =
   'https://docs.google.com/document/d/1HqwAg8Sk2kJqCDX9Fk7_IFeMOf5t5bbG/edit?usp=sharing&ouid=100534678698735327403&rtpof=true&sd=true';
 
+export const ministryPartners = [
+  { name: 'Jews for Jesus', href: '#' },
+  { name: 'Chosen People Ministries', href: '#' },
+  { name: 'Voice of Judah', href: '#' },
+  { name: "G-d Is My Help", href: '#' },
+  { name: 'Jerod Cox in Thailand', href: '#' },
+  { name: 'Herzekows', href: '#' },
+  { name: 'Evan Levine', href: '#' },
+];
+
 export const missions = [
   {
     title: 'Local Outreach in Denver',

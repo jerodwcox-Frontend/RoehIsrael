@@ -1,4 +1,4 @@
-import { missions, prayerBulletinUrl } from '../data';
+import { missions, ministryPartners, prayerBulletinUrl } from '../data';
 import { PinIcon, StarOfDavid, HeartIcon, TorahIcon, BulletinIcon } from './icons';
 
 const icons = [PinIcon, StarOfDavid, HeartIcon, TorahIcon];
@@ -43,6 +43,20 @@ export default function Missions({ showHeading = true }) {
               </div>
             );
           })}
+        </div>
+
+        <div className="partners">
+          <div className="partners-text">
+            <h3>Ministry Partners We Support</h3>
+            <p>Individuals and organizations Roeh Israel partners with in ministry to the Jewish people.</p>
+          </div>
+          <div className="partners-list">
+            {ministryPartners.map((p) => (
+              <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer">
+                {p.name}
+              </a>
+            ))}
+          </div>
         </div>
 
         <div className="prayer-bulletin">
