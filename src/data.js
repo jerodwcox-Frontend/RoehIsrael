@@ -57,13 +57,19 @@ export const prayerBulletinUrl =
   'https://docs.google.com/document/d/1HqwAg8Sk2kJqCDX9Fk7_IFeMOf5t5bbG/edit?usp=sharing&ouid=100534678698735327403&rtpof=true&sd=true';
 
 export const ministryPartners = [
-  { name: 'Jews for Jesus', href: '#' },
-  { name: 'Chosen People Ministries', href: '#' },
+  {
+    name: 'Jews for Jesus',
+    href: 'https://www.lifeinmessiah.org/about?utm_source=google&utm_medium=cpc&utm_campaign=NAV+-+Aboututm_term=jews%20for%20jesus&gad_source=1&gad_campaignid=21115766390&gbraid=0AAAAABmv9KT10Yr0QdQgc5P-CCwVMqtmf&gclid=CjwKCAjwpefSBhBvEiwAzyEtZ87VYx7cnjZVy_4KF8jTqEMfldpf8Gu33V-UjUgGFtEotBWGTXhVtRoCNkMQAvD_BwE',
+  },
+  {
+    name: 'Chosen People Ministries',
+    href: 'https://chosenpeople.com/?utm_source=google_ads&utm_medium=cpc&utm_campaign=search_ads&gad_source=1&gad_campaignid=22106527655&gbraid=0AAAAAqSxPFLTldzTzVa0b_uIHmhnhNbho&gclid=CjwKCAjwpefSBhBvEiwAzyEtZzIsZVoEGXvK9IDN8HqCHQNcTY-SUa0sHORDybgoguIiZ8hm4PuI5hoCE3UQAvD_BwE',
+  },
   { name: 'Voice of Judah', href: '#' },
   { name: "G-d Is My Help", href: '#' },
   { name: 'Jerod Cox in Thailand', href: '#' },
   { name: 'Herzekows', href: '#' },
-  { name: 'Evan Levine', href: '#' },
+  { name: 'Evan Levine', href: 'https://hatikvaproject.org/about/' },
 ];
 
 export const missions = [
