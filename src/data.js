@@ -115,7 +115,7 @@ export const ministryPartners = [
   },
   { name: 'Voice of Judah', href: '#' },
   { name: "G-d Is My Help", href: 'https://god-is-my-help.vercel.app' },
-  { name: 'Jerod Cox in Thailand', href: '#' },
+  { name: 'Jerod Cox in Thailand', href: 'https://jerod-cox-thailand.vercel.app' },
   { name: 'Herzekows', href: '#' },
   { name: 'Evan Levine', href: 'https://hatikvaproject.org/about/' },
   { name: 'Back to Jerusalem', href: 'https://backtojerusalem.com/' },
