@@ -2,11 +2,8 @@ export const nav = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
-  { label: 'Events', href: '/events' },
-  { label: 'Missions', href: '/missions' },
   { label: 'Sermons', href: '/sermons' },
   { label: 'Podcast', href: '/podcast' },
-  { label: 'Find Us', href: '/find-us' },
 ];
 
 export const quickLinks = [
