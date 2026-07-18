@@ -121,7 +121,7 @@ export const ministryPartners = [
     name: 'Chosen People Ministries',
     href: 'https://chosenpeople.com/?utm_source=google_ads&utm_medium=cpc&utm_campaign=search_ads&gad_source=1&gad_campaignid=22106527655&gbraid=0AAAAAqSxPFLTldzTzVa0b_uIHmhnhNbho&gclid=CjwKCAjwpefSBhBvEiwAzyEtZzIsZVoEGXvK9IDN8HqCHQNcTY-SUa0sHORDybgoguIiZ8hm4PuI5hoCE3UQAvD_BwE',
   },
-  { name: 'Voice of Judah', href: '#' },
+  { name: 'Voice of Judah', href: 'https://vojisrael.org/' },
   { name: "G-d Is My Help", href: 'https://god-is-my-help.vercel.app' },
   { name: 'Jerod Cox in Thailand', href: 'https://jerod-cox-thailand.vercel.app' },
   { name: 'Herzekows', href: '#' },
