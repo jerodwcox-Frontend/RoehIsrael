@@ -1266,9 +1266,13 @@ button {
 }
 
 .unreached-group-text h3 {
+  display: inline-block;
   font-size: 24px;
   font-weight: 600;
   color: var(--navy-900);
+  background: #fff176;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
 }
 
 .unreached-group-name {
