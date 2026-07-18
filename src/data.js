@@ -9,6 +9,54 @@ export const nav = [
   { label: 'Find Us', href: '/find-us' },
 ];
 
+export const quickLinks = [
+  { key: 'sermons', label: 'Watch', href: '/sermons' },
+  { key: 'podcast', label: 'Listen', href: '/podcast' },
+  { key: 'missions', label: 'Missions', href: '/missions' },
+  { key: 'events', label: 'Events', href: '/events' },
+  { key: 'give', label: 'Give', href: '/give' },
+  { key: 'find-us', label: 'Find Us', href: '/find-us' },
+];
+
+export const exploreLinks = [
+  {
+    key: 'about',
+    title: 'Our Story',
+    desc: 'From a living room in 1980 to a congregation of 300 — Jewish and Gentile believers in Y\'shua worshiping together.',
+    href: '/about',
+  },
+  {
+    key: 'services',
+    title: 'Worship With Us',
+    desc: 'Erev Shabbat on Fridays and Shabbat Service on Saturdays — every gathering is an open door.',
+    href: '/services',
+  },
+  {
+    key: 'missions',
+    title: 'Missions',
+    desc: 'Local outreach in Denver, standing with Israel, and partnering with Messianic ministries around the world.',
+    href: '/missions',
+  },
+  {
+    key: 'sermons',
+    title: 'Sermons & Teaching',
+    desc: 'Torah-rooted teaching from a Messianic Jewish perspective, on YouTube, Rumble, and everywhere in between.',
+    href: '/sermons',
+  },
+  {
+    key: 'podcast',
+    title: 'The Podcast',
+    desc: 'Every message, posted automatically — catch up wherever you are, whenever you have time to listen.',
+    href: '/podcast',
+  },
+  {
+    key: 'find-us',
+    title: 'Visit In Person',
+    desc: 'We\'d love to welcome you to Denver. Get our address, office hours, and everything you need to plan a visit.',
+    href: '/find-us',
+  },
+];
+
 export const podcastFeedUrl = 'https://feed.podbean.com/roehisrael/feed.xml';
 export const podcastChannelUrl = 'https://roehisrael.podbean.com';
 

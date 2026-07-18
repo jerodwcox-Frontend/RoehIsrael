@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import Explore from '../components/Explore';
 import LatestSermon from '../components/LatestSermon';
 import Services from '../components/Services';
 import About from '../components/About';
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Explore />
       <section className="latest-sermon-home">
         <div className="container">
           <LatestSermon />

@@ -5,6 +5,33 @@ export const StarOfDavid = (props) => (
   </svg>
 );
 
+export const MicIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect x="9" y="2.5" width="6" height="11" rx="3" />
+    <path d="M5.5 11a6.5 6.5 0 0 0 13 0" />
+    <path d="M12 17.5V21" />
+    <path d="M8.5 21h7" />
+  </svg>
+);
+
+export const CalendarIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <rect x="3" y="5" width="18" height="16" rx="2" />
+    <path d="M3 10h18" />
+    <path d="M8 2.5v5" />
+    <path d="M16 2.5v5" />
+  </svg>
+);
+
+export const HandsIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <path d="M12 21s-6-4.5-8.5-8C1.8 10.6 2.5 8 5 8c1.3 0 2.2.7 3 1.8" />
+    <path d="M12 21s6-4.5 8.5-8c1.7-2.4 1-5-1.5-5-1.3 0-2.2.7-3 1.8" />
+    <path d="M8 9.8V5a2 2 0 0 1 4 0v.5" />
+    <path d="M12 5.5V4a2 2 0 0 1 4 0v5.8" />
+  </svg>
+);
+
 export const PlayIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <circle cx="12" cy="12" r="9.2" />
