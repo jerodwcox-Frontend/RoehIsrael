@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { nav, contact, social } from '../data';
-import { StarOfDavid, FacebookIcon, YoutubeIcon, XIcon, PlayIcon } from './icons';
+import { MessianicStar, FacebookIcon, YoutubeIcon, XIcon, PlayIcon } from './icons';
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link className="brand" to="/">
               <span className="brand-mark">
-                <StarOfDavid stroke="#dabb52" />
+                <MessianicStar stroke="#dabb52" />
               </span>
               <span className="brand-text">
                 <span className="name">Congregation Roeh Israel</span>

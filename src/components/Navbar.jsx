@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { StarOfDavid } from './icons';
+import { MessianicStar } from './icons';
 import { nav } from '../data';
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="container">
           <Link className="brand" to="/">
             <span className="brand-mark">
-              <StarOfDavid stroke="#dabb52" />
+              <MessianicStar stroke="#dabb52" />
             </span>
             <span className="brand-text">
               <span className="name">Congregation Roeh Israel</span>

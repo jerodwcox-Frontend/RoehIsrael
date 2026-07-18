@@ -5,6 +5,15 @@ export const StarOfDavid = (props) => (
   </svg>
 );
 
+export const MessianicStar = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" {...props}>
+    <path d="M12 2 L21 18 L3 18 Z" />
+    <path d="M12 22 L3 6 L21 6 Z" />
+    <path d="M12 7.5v10" strokeLinecap="round" />
+    <path d="M8.7 11h6.6" strokeLinecap="round" />
+  </svg>
+);
+
 export const MicIcon = (props) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" {...props}>
     <rect x="9" y="2.5" width="6" height="11" rx="3" />
