@@ -1235,6 +1235,62 @@ button {
   background: var(--white);
 }
 
+.unreached-group {
+  margin-top: 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(16, 27, 45, 0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.unreached-group .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--cream-100);
+  color: var(--gold-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.unreached-group-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.unreached-group-text h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--navy-900);
+}
+
+.unreached-group-name {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--navy-800);
+  margin-top: 0.35rem;
+}
+
+.unreached-group-name a {
+  color: var(--gold-600);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.unreached-group-text p:not(.unreached-group-name) {
+  color: var(--ink-600);
+  font-size: 19px;
+  margin-top: 0.6rem;
+  line-height: 1.6;
+}
+
 .prayer-bulletin {
   margin-top: 1.5rem;
   background: linear-gradient(135deg, var(--navy-900), var(--navy-700));

@@ -107,6 +107,13 @@ export const sermonSources = [
 export const prayerBulletinUrl =
   'https://docs.google.com/document/d/1HqwAg8Sk2kJqCDX9Fk7_IFeMOf5t5bbG/edit?usp=sharing&ouid=100534678698735327403&rtpof=true&sd=true';
 
+export const unreachedGroup = {
+  name: 'Jat (Muslim traditions)',
+  location: 'Pakistan',
+  href: 'https://joshuaproject.net/people_groups/17571',
+  desc: "More than 32,357,000 speak Saraiki, follow Islam almost entirely, and have virtually no known followers of Y'shua. Known historically as leaders, warriors, protectors, and landowners, they maintain a strong ethnic identity, rarely marry outside their people, and often trace whole villages to one founding ancestor. An estimated 647 workers are needed to live among them, share their hardships, and proclaim the Good News. Pray for Scripture in a language they fully understand and for their leaders' hearts to open to Y'shua.",
+};
+
 export const ministryPartners = [
   { name: 'Jews for Jesus', href: 'https://jewsforjesus.org/' },
   {

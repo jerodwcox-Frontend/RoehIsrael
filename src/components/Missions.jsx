@@ -1,5 +1,5 @@
-import { missions, ministryPartners, prayerBulletinUrl } from '../data';
-import { PinIcon, StarOfDavid, HeartIcon, TorahIcon, BulletinIcon } from './icons';
+import { missions, ministryPartners, prayerBulletinUrl, unreachedGroup } from '../data';
+import { PinIcon, StarOfDavid, HeartIcon, TorahIcon, BulletinIcon, GlobeIcon } from './icons';
 
 const icons = [PinIcon, StarOfDavid, HeartIcon, TorahIcon];
 
@@ -56,6 +56,22 @@ export default function Missions({ showHeading = true }) {
                 {p.name}
               </a>
             ))}
+          </div>
+        </div>
+
+        <div className="unreached-group">
+          <span className="icon">
+            <GlobeIcon width="26" height="26" />
+          </span>
+          <div className="unreached-group-text">
+            <h3>Unreached Group for the Week</h3>
+            <p className="unreached-group-name">
+              <a href={unreachedGroup.href} target="_blank" rel="noopener noreferrer">
+                {unreachedGroup.name}
+              </a>{' '}
+              in {unreachedGroup.location}
+            </p>
+            <p>{unreachedGroup.desc}</p>
           </div>
         </div>
 
