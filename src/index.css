@@ -259,8 +259,8 @@ button {
 }
 
 .brand-mark {
-  width: 46px;
-  height: 46px;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   background: var(--navy-900);
   display: flex;
@@ -270,8 +270,8 @@ button {
 }
 
 .brand-mark svg {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
 }
 
 .brand-text {
