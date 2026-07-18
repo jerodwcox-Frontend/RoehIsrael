@@ -118,6 +118,7 @@ export const ministryPartners = [
   { name: 'Jerod Cox in Thailand', href: '#' },
   { name: 'Herzekows', href: '#' },
   { name: 'Evan Levine', href: 'https://hatikvaproject.org/about/' },
+  { name: 'Back to Jerusalem', href: 'https://backtojerusalem.com/' },
 ];
 
 export const missions = [
