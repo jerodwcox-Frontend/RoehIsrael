@@ -65,7 +65,13 @@ export const social = {
   twitter: 'https://twitter.com/RoehIsrael',
   facebook: 'https://www.facebook.com/CongregationRoehIsrael',
   rumble: 'https://rumble.com/c/c-3717131',
+  facebookLive: 'https://www.facebook.com/CongregationRoehIsrael/live',
 };
+
+// Auto-switches to whatever Roeh Israel is currently streaming live on
+// YouTube; shows an idle player the rest of the time. No API key needed.
+export const youtubeChannelId = 'UCGotzt4kGwM_37Vf-d0PsVw';
+export const youtubeLiveEmbedUrl = `https://www.youtube.com/embed/live_stream?channel=${youtubeChannelId}&autoplay=0`;
 
 export const paypalDonateUrl =
   'https://www.paypal.com/donate?token=VgEIzQAnMeqzLGoMyEz_qhsU1wo5xcQYF6vqPcXoZX1EcHe8Q1EmqEokAIdLhCU27Zq7XKjrndak7Nd1';
