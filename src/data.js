@@ -107,11 +107,12 @@ export const sermonSources = [
 export const prayerBulletinUrl =
   'https://docs.google.com/document/d/1HqwAg8Sk2kJqCDX9Fk7_IFeMOf5t5bbG/edit?usp=sharing&ouid=100534678698735327403&rtpof=true&sd=true';
 
+// Fallback shown if the live bulletin fetch (see api/unreached-group.js) fails.
 export const unreachedGroup = {
   name: 'Jat (Muslim traditions)',
   location: 'Pakistan',
   href: 'https://joshuaproject.net/people_groups/17571',
-  desc: "More than 32,357,000 speak Saraiki, follow Islam almost entirely, and have virtually no known followers of Y'shua. Known historically as leaders, warriors, protectors, and landowners, they maintain a strong ethnic identity, rarely marry outside their people, and often trace whole villages to one founding ancestor. An estimated 647 workers are needed to live among them, share their hardships, and proclaim the Good News. Pray for Scripture in a language they fully understand and for their leaders' hearts to open to Y'shua.",
+  desc: "Nearly 1.9 billion people—one fourth of humanity—belong to 4,823 Frontier People Groups where fewer than 1 in 1,000 are Christian. With virtually no Gospel presence, no self-sustaining church movement, and Christian adherence at 0.1% or less, they require pioneer church planting. Today, 71.7% of unreached people groups remain frontier, while only 28.3% have believers to partner with. The Jat of Pakistan are one example. More than 32,357,000 speak Saraiki, follow Islam almost entirely, and have virtually no known followers of Y'shua. Known historically as leaders, warriors, protectors, and landowners, they maintain a strong ethnic identity, rarely marry outside their people, and often trace whole villages to one founding ancestor. While Hindu and Sikh Jat communities in India are wealthy and influential, Pakistan's Jat remain almost entirely unreached. An estimated 647 workers are needed to live among them, share their hardships, and proclaim the Good News. Pray for Scripture in a language they fully understand and for their leaders' hearts to open to Y'shua.",
 };
 
 export const ministryPartners = [

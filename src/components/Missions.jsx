@@ -1,9 +1,12 @@
-import { missions, ministryPartners, prayerBulletinUrl, unreachedGroup } from '../data';
+import { missions, ministryPartners, prayerBulletinUrl } from '../data';
 import { PinIcon, StarOfDavid, HeartIcon, TorahIcon, BulletinIcon, GlobeIcon } from './icons';
+import useUnreachedGroup from '../hooks/useUnreachedGroup';
 
 const icons = [PinIcon, StarOfDavid, HeartIcon, TorahIcon];
 
 export default function Missions({ showHeading = true }) {
+  const { group: unreachedGroup } = useUnreachedGroup();
+
   return (
     <section className="missions" id="missions">
       <div className="container">
@@ -68,8 +71,8 @@ export default function Missions({ showHeading = true }) {
             <p className="unreached-group-name">
               <a href={unreachedGroup.href} target="_blank" rel="noopener noreferrer">
                 {unreachedGroup.name}
-              </a>{' '}
-              in {unreachedGroup.location}
+              </a>
+              {unreachedGroup.location && ` in ${unreachedGroup.location}`}
             </p>
             <p>{unreachedGroup.desc}</p>
           </div>
